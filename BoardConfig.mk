@@ -18,5 +18,9 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_citrus
+TARGET_RECOVERY_DEVICE_MODULES := libinit_citrus
+
 # Inherit from the proprietary version
 include vendor/xiaomi/citrus/BoardConfigVendor.mk
