@@ -17,7 +17,8 @@ static const variant_info_t lime_info = {
     .device = "citrus",
     .marketname = "Poco M3",
     .model = "M2010J19CG",
-
+    .build_fingerprint = "POCO/citrus_global/citrus:12/RKQ1.211130.001/V14.0.2.0.SJFMIXM:user/release-keys",
+    
     .nfc = false,
 };
 
