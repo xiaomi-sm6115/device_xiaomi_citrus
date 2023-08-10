@@ -9,6 +9,9 @@ PRODUCT_HARDWARE := citrus
 # Inherit from sm6115-common
 $(call inherit-product, device/xiaomi/sm6115-common/common.mk)
 
+# Inherit custom packages configuration
+$(call inherit-product, device/xiaomi/citrus/custom.mk)
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
